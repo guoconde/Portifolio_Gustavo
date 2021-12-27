@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from '../About'
 import Projects from '../Projects'
-import Wellcome from '../Wellcome'
+import Contact from '../Contact'
 
 import '../../assets/css/reset.css'
 import '../../assets/css/style.css'
@@ -14,9 +14,9 @@ export default function App() {
         <BrowserRouter>
             <Topo />
             <Routes>
-                <Route path='/' element={<Wellcome />} />
-                <Route path='/about' element={<About />} />
+                <Route path='/' element={<About />} />
                 <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
             </Routes>
         </BrowserRouter>
 

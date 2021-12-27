@@ -7,8 +7,9 @@ export default function Top() {
 
     return (
         <Header className="top">
-            <BtnHeader onClick={() => navigate('/about')}>ABOUT</BtnHeader>
+            <BtnHeader onClick={() => navigate('/')}>ABOUT</BtnHeader>
             <BtnHeader onClick={() => navigate('/projects')}>PROJECTS</BtnHeader>
+            <BtnHeader onClick={() => navigate('/contact')}>CONTACT</BtnHeader>
         </Header>
     )
 }
@@ -39,5 +40,6 @@ const BtnHeader = styled.button`
 
     &:hover {
         background-color: rgba(0,0,0, 0.5);
+        cursor: pointer;
     }
 `
