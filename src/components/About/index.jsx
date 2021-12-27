@@ -28,7 +28,7 @@ export default function About() {
             <ion-icon onClick={previusImg} name="chevron-back-circle"></ion-icon>
             <p>{Data[positionImg].text}</p>
             <BoxImg>
-                <img src={`${Data[positionImg].img}`} alt="PetFriendly" />
+                <img src={Data[positionImg].img} alt="PetFriendly" />
             </BoxImg>
             <ion-icon onClick={nextImg} name="chevron-forward-circle"></ion-icon>
         </BoxAbout>
