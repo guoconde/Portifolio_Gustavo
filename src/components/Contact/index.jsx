@@ -4,19 +4,19 @@ import { Data } from "./data"
 
 export default function Wellcome() {
     return (
-        <BoxAbout>
+        <BoxContact>
             {Data.map((d, i) =>
-                <div key={i}>
+                <Container key={i}>
                     <ion-icon name={d.ionType}></ion-icon>
-                    <div>{d.type}</div>
+                    <div>{d.type}: </div>
                     <div>{d.adress}</div>
-                </div>
+                </Container>
             )}
-        </BoxAbout>
+        </BoxContact>
     )
 }
 
-const BoxAbout = styled.div`
+const BoxContact = styled.div`
     width: 80%;
 
     background-color: rgba(0, 0, 255, 0.7);
@@ -29,6 +29,13 @@ const BoxAbout = styled.div`
     padding: 30px 10px;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+`
+const Container = styled.div `
+    display: flex;
+    gap: 20px;
+
+    padding-left: 20px;
+
 `
