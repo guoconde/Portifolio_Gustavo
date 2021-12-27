@@ -1,21 +1,42 @@
+import { useState } from "react"
 import styled from "styled-components"
 
-import PetFriendly from "../../assets/images/petfriendly.gif"
-
+import { Data } from "./data"
 
 export default function About() {
+    const [positionImg, setPositionImg] = useState(0)
+
+
+    function previusImg() {
+        if(positionImg === 0) {
+            setPositionImg(Data.length - 1)
+        } else {
+            setPositionImg(positionImg -1)
+        }
+    }
+
+    function nextImg() {
+        if(positionImg === Data.length -1) {
+            setPositionImg(0)
+        } else {
+            setPositionImg(positionImg +1)
+        }
+    }
+
     return (
         <BoxAbout>
-            <p>I'm pet friendly!</p>
+            <ion-icon onClick={previusImg} name="chevron-back-circle"></ion-icon>
+            <p>{Data[positionImg].text}</p>
             <BoxImg>
-                <img src={PetFriendly} alt="PetFriendly" />
+                <img src={`${Data[positionImg].img}`} alt="PetFriendly" />
             </BoxImg>
+            <ion-icon onClick={nextImg} name="chevron-forward-circle"></ion-icon>
         </BoxAbout>
     )
 }
 
 const BoxAbout = styled.div`
-    width: 70%;
+    width: 80%;
 
     background-color: rgba(0, 0, 255, 0.7);
 
@@ -24,7 +45,7 @@ const BoxAbout = styled.div`
     border-radius: 10px;
 
     margin: 50px auto;
-    padding: 30px;
+    padding: 30px 3px;
 
     display: flex;
     justify-content: space-between;
@@ -35,6 +56,11 @@ const BoxAbout = styled.div`
         text-align: center;
         font-size: 25px;
         font-weight: 500;
+    }
+
+    ion-icon {
+        color: rgba(255,255,255, 0.3);
+        font-size: 30px;
     }
 `
 const BoxImg = styled.div`
