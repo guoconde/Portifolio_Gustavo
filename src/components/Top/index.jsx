@@ -17,7 +17,9 @@ export default function Top() {
 const Header = styled.header`
     height: 60px;
 
-    background-color: rgba(0,0,0, 0.6);
+    box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.5);
+
+    background-color: rgba(255,0,0, 0.7);
     padding: 0 25px;
     
     display: flex;
@@ -39,7 +41,7 @@ const BtnHeader = styled.button`
     font-weight: 500;
 
     &:hover {
-        background-color: rgba(0,0,0, 0.5);
+        background-color: rgba(255,0,0, 0.5);
         cursor: pointer;
     }
 `
