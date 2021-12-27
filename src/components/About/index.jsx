@@ -45,7 +45,7 @@ const BoxAbout = styled.div`
     border-radius: 10px;
 
     margin: 50px auto;
-    padding: 30px 3px;
+    padding: 30px 10px;
 
     display: flex;
     justify-content: space-between;
@@ -61,6 +61,8 @@ const BoxAbout = styled.div`
     ion-icon {
         color: rgba(255,255,255, 0.3);
         font-size: 30px;
+
+        cursor: pointer;
     }
 `
 const BoxImg = styled.div`
