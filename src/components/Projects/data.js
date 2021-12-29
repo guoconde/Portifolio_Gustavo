@@ -1,12 +1,13 @@
-import Allegra from '../../assets/images/alegra.png'
-import Cineflex from '../../assets/images/cineflex.png'
-import Zap from '../../assets/images/zapRecall.png'
-import Buzz from '../../assets/images/buzz.png'
-import Driveneats from '../../assets/images/driveneats.png'
-import Globo from '../../assets/images/globo.png'
-import Instagram from '../../assets/images/instagram.png'
-import Parrot from '../../assets/images/parrot.png'
-import Uol from '../../assets/images/uol.png'
+import Allegra from './images/alegra.png'
+import Cineflex from './images/cineflex.png'
+import Zap from './images/zapRecall.png'
+import Buzz from './images/buzz.png'
+import Driveneats from './images/driveneats.png'
+import Globo from './images/globo.png'
+import Instagram from './images/instagram.png'
+import Parrot from './images/parrot.png'
+import Uol from './images/uol.png'
+import Matador from './images/matador.png'
 
 export const Data = [
     { 
@@ -55,6 +56,12 @@ export const Data = [
         name: 'Clone Chat-Uol',
         link: 'https://guoconde.github.io/Chat-UOL/',
         img: `${Uol}`,
+        description: 'bla bla bla'
+    },
+    {
+        name: 'Matador de Monstros',
+        link: 'https://matador1.vercel.app/',
+        img: `${Matador}`,
         description: 'bla bla bla'
     },
     {

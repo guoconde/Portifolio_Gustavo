@@ -7,13 +7,13 @@ export default function Projects() {
     return (
         <BoxAbout>
             {Data.map((d, i) =>
-                    <Hyperlink key={i}>
-                        <h1>{d.name}</h1>
-                        <a href={d.link} target='_blank' rel="noreferrer">
-                            <img src={d.img} alt={d.name} />
-                        </a>
-                        <p>{d.description}</p>
-                    </Hyperlink>
+                <Hyperlink key={i}>
+                    <h1>{d.name}</h1>
+                    <a href={d.link} target='_blank' rel="noreferrer">
+                        <img src={d.img} alt={d.name} />
+                    </a>
+                    <p>{d.description}</p>
+                </Hyperlink>
             )}
         </BoxAbout>
     )

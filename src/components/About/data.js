@@ -1,10 +1,10 @@
-import PetFriendly from "../../assets/images/petfriendly.gif"
-import Travel from '../../assets/images/travel.jpg'
-import Lucky from '../../assets/images/lucky.jpg'
-import Me from '../../assets/images/me.jpg'
-import Bike from '../../assets/images/bike.jpg'
-import Cook from '../../assets/images/hamburger.jpg'
-import Brasil from '../../assets/images/brasil.jpg'
+import PetFriendly from "./images/petfriendly.gif"
+import Travel from './images/travel.jpg'
+import Lucky from './images/lucky.jpg'
+import Me from './images/me.jpg'
+import Bike from './images/bike.jpg'
+import Cook from './images/hamburger.jpg'
+import Brasil from './images/brasil.jpg'
 
 export const Data = [
     {text: "I'm Gustavo, 35 years old, married. I live in Brazil.", img: `${Me}`},
