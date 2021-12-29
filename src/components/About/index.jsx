@@ -38,7 +38,7 @@ export default function About() {
 }
 
 const BoxAbout = styled.div`
-    width: 100%;
+    width: 90%;
 
     margin: 110px auto;
     
@@ -76,8 +76,14 @@ const BoxImg = styled.div`
     width: 350px;
     height: 420px;
     
-    box-shadow: 0px 3px 8px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    
+    border: double 5px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(45deg, rgba(238,155,0,1) 0%, rgba(0,95,115,1) 100%);
+    border-radius: 0 180px 0 300px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 
     overflow: hidden;
 `

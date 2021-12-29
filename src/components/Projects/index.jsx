@@ -22,11 +22,13 @@ export default function Projects() {
 const BoxAbout = styled.div`
     width: 100%;
 
+    box-sizing: border-box;
+
     margin: 110px auto;
-    padding: 30px 100px;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
     `
 

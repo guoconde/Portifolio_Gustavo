@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 
-import Logo from '../../assets/images/LogoWhite.png'
+import Logo from '../../assets/images/LogoYellow.png'
 
 export default function Top() {
 
@@ -13,7 +13,6 @@ export default function Top() {
             <div>
                 <BtnHeader onClick={() => navigate('/')}>ABOUT</BtnHeader>
                 <BtnHeader onClick={() => navigate('/projects')}>PROJECTS</BtnHeader>
-                <BtnHeader onClick={() => navigate('/contact')}>CONTACT</BtnHeader>
             </div>
         </Header>
     )
@@ -37,7 +36,6 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #FFF;
 
     img {
         width: 200px;
