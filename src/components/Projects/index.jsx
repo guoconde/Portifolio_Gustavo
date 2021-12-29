@@ -6,26 +6,58 @@ import { Data } from "./data"
 export default function Projects() {
     return (
         <BoxAbout>
-            {Data[0].name}
-            {Data[0].link}
-            {Data[0].img}
+            {Data.map((d, i) =>
+                    <Hyperlink key={i}>
+                        <h1>{d.name}</h1>
+                        <a href={d.link} target='_blank' rel="noreferrer">
+                            <img src={d.img} alt={d.name} />
+                        </a>
+                        <p>{d.description}</p>
+                    </Hyperlink>
+            )}
         </BoxAbout>
     )
 }
 
 const BoxAbout = styled.div`
-    width: 80%;
+    width: 100%;
 
-    background-color: rgba(0, 0, 255, 0.7);
-
-    box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.5);
-
-    border-radius: 10px;
-
-    margin: 50px auto;
-    padding: 30px 10px;
+    margin: 110px auto;
+    padding: 30px 100px;
 
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    `
+
+const Hyperlink = styled.div`
+    width: 400px;
+
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    
+    box-sizing: border-box;
+
+    padding: 20px; 
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
 `
