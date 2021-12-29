@@ -24,6 +24,8 @@ const Header = styled.header`
 
     box-sizing: border-box;
 
+    color: #e9d8a6;
+    
     box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.2);
 
     position: fixed;

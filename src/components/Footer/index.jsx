@@ -17,7 +17,7 @@ export default function Contact() {
 
 const FooterDiv = styled.div`
     position: fixed;
-    bottom: 20px;
+    bottom: 35px;
     left: 15px;
     
     width: 20px;

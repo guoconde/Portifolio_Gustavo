@@ -35,7 +35,7 @@ const BoxAbout = styled.div`
 const Hyperlink = styled.div`
     width: 400px;
 
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0, 18, 25, 0.7);
     border-radius: 10px;
     
     box-sizing: border-box;

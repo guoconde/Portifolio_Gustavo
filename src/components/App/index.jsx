@@ -3,7 +3,7 @@ import About from '../About'
 import Projects from '../Projects'
 import Contact from '../Footer'
 
-import Silhouette from '../../assets/images/contorno.png'
+import Silhouette from '../../assets/images/contornoAzul.png'
 
 import '../../assets/css/reset.css'
 import '../../assets/css/style.css'

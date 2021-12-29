@@ -66,7 +66,7 @@ const BoxAbout = styled.div`
     }
     
     ion-icon {
-        color: rgba(255,255,255, 0.1);
+        color: rgba(0, 18, 25, 0.5);
         font-size: 30px;
         
         cursor: pointer;
@@ -81,7 +81,8 @@ const BoxImg = styled.div`
 
     border-radius: 5px;
 
-    background-color: rgba(233, 216, 166, 0.4);
+    /* background-color: rgba(233, 216, 166, 0.5); */
+    background-color: rgba(0, 18, 25, 0.7);
 
     position: relative;
     
@@ -99,7 +100,7 @@ const BoxImg = styled.div`
         width: 300px;
         height: 300px;
         
-        border: 10px solid #001219;
+        border: 10px solid #e5e5e5;
 
         border-radius: 51%;
         overflow: hidden;
